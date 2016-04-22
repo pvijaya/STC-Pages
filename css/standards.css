@@ -1,0 +1,134 @@
+/**/
+html
+{
+	font-size:14px;
+}
+body
+{
+	margin:0px;
+	font-family:'Arial','Trebuchet MS';	
+}
+a:link
+{
+	
+	font-family:'Arial','Trebuchet MS', Sans-serif;
+	color:#7D120C;
+	text-decoration:none;
+}
+a:active
+{
+	color:#7D120C;
+}
+a:visited
+{
+	color:#7D120C;
+}
+a:hover
+{
+	color:#7D120C;
+}
+a:focus{
+	background-color:#F8F3D2;
+}
+.header
+{
+	background:#555;
+	background-size:contain;
+	width:100%;
+	min-width:760px;
+	color:#fff;
+	margin:0px;
+}
+.header div.container{
+	max-width:1200px;
+	min-width:760px;
+	margin:0px auto;
+}
+
+.footer
+{
+	/*position:fixed; This was covering up debugging output.*/
+	bottom:0px;
+	background:url(../images/footer-background.fw.png);
+	background-size:contain;
+	width:100%;
+	min-width:760px;
+	padding:10px 0px;
+	color:#fff;
+	margin:0px auto;
+}
+.wrapper 
+{
+	max-width:1200px;
+	min-width:750px;
+	min-height: 500px;
+	height: auto !important;
+	height: 100%;
+	background-color:#fff;
+	margin:0px auto 0px auto;
+	padding:0px 5px 10px 5px;
+}
+
+div.heading
+{
+	background:#555;
+	background-size:contain;
+	color:#fff;
+	padding:7px;
+	font-weight:700;
+	text-transform: uppercase;
+}
+div.heading h2
+{
+	margin:0px;
+	padding:0px;
+}
+div.content
+{
+	padding:5px;
+}
+legend {
+	width: auto;
+	padding:0px 5px;	
+	border: 1px inset transparent;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: content;
+	background-color:#fff;
+	font-size:120%;
+	margin-top:-10px;
+}
+fieldset {
+	margin: 1em 5px 5px 5px;
+	padding:0em 1em 1em 1em;
+	border: 1px inset transparent;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: content;
+}
+/*make warnings and errors uniform throughout*/
+.warning {
+	color: #fff;
+	background-color: #AB1A1A;
+	padding: 0.5em;
+	border: double gray 3px;
+}
+.alert {
+	color: #000;
+	background-color: #E3D874;
+	padding: 0.5em;
+	border: double gray 3px;
+}
+/*make success messages uniform throughout*/
+.ok {
+	color: black;
+	background-color: #8CFFAB;
+	padding: 0.5em;
+	border: double gray 3px;
+}

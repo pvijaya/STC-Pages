@@ -1,0 +1,286 @@
+/*Contains special case inputs, tables, divs, etc */
+
+/* inputs */
+/*a common function generates site selectors with this class*/
+select.siteSelector {
+	display: inline-block;
+	vertical-align: top;
+}
+select
+{
+	border-radius:2px;
+	padding:3px;
+	max-width: 98%;
+	margin: 0px;
+}
+input[type="button"], input[type="submit"],  input[type="file"], input[type="reset"]
+{
+	border-radius:2px;
+	padding:2px 10px;
+	font-weight:500;
+	line-height: 1.4;
+	margin-right: .1em; 
+	text-decoration: none !important; 
+	cursor: pointer; 
+	text-align: center; 
+	overflow: visible;
+}
+input[type="button"]:hover, input[type="submit"]:hover, input[type="file"]:hover, input[type="reset"]:hover
+{
+	background-color:#888888;
+	color:#fff;
+}
+input[type="button"]:active,input[type="submit"]:active,input[type="file"]:active, input[type="reset"]:active
+{
+	background-color:#111111;
+	color:#fff;
+}
+input[type="text"]
+{
+	padding:2px 5px;
+}
+textarea
+{
+	height:100px;
+	min-width:300px;
+	padding:2px 5px;
+}
+
+
+/*a zebra striped table and its helper classes*/
+table.stripe, #articleId table {
+	line-height:150%;
+	background-color: #FCF9E6;
+	border: thin outset Navy;
+	text-align: left;
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+}
+/*we don't want any clever table highjinx in the article editor.  This'll put the kibosh on it.*/
+#articleId table {
+	width:100%;
+}
+
+table.stripe th, #articleId table th { 
+	font-weight: bold;
+	text-align: center;
+}
+
+table.stripe tr:nth-child(odd), #articleId table tr:nth-child(odd){ 
+	background-color: #F8F3D2; 
+}
+table.stripe tr:nth-child(even), #articleId table tr:nth-child(even) { 
+	background-color: #e1e0d9;
+}
+
+table.stripe tr.titlerow {
+	background:url(/apps/stcpages/v4/images/header-background.fw.png);
+	background-size:contain;
+	font-weight: bold;
+	color:#fff;
+	font-size:110%;
+}
+table.stripe tr.titlerow a:active {
+	color:#fff;
+	text-decoration:underline;
+}
+table.stripe tr.titlerow a:visited {
+	color:#fff;
+	text-decoration:underline;
+}
+table.stripe tr.titlerow a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+table.stripe tr.titlerow a:focus {
+	color:#fff;
+	text-decoration:underline;
+}
+
+table.stripe tr.titlerow2 {
+	background-color: #D0C476;
+	font-weight: bold;
+}
+table.stripe td, table.stripe th {
+	padding:5px;
+	vertical-align: top;
+}
+/*end of striped table*/
+
+/*.trigger and .triggerexpand are special classes used in a javascript function in /js/common.js */
+.trigger, .triggerexpanded {
+		white-space: nowrap;
+		cursor: pointer;
+		font-weight: bold;
+}
+span.trigger:hover, span.triggerexpanded:hover {
+	background-color: #cccccc;
+}
+
+
+
+/* special casing */
+#articleId {
+	width:71%;
+	margin:0px auto;
+	padding:5px;
+}
+ #articleId img {
+ 	max-width:100%;
+ }
+ 
+ #articleId a:link, #articleId a:hover, #articleId a:focus, #articleId a:visited,  #articleId a:active {
+ 	text-decoration: underline;
+ }
+.left-side {
+	width:63%;
+	float:left;
+	background-color:#fff;
+}
+.right-side {
+	width:33%;
+	float:right;
+	background-color:#fff;
+}
+.block-card {
+	text-align:center;
+	line-height:150%;
+	padding:10px;
+	margin:15px;
+	border: 1px inset transparent;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: content;
+}
+
+.block-card-tight {
+	text-align:center;
+	line-height:150%;
+	padding:10px 0px;
+	margin:15px 0px;
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: content;
+}
+/*Shadow border is for inactive boxes*/
+.shadow-border
+{
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: content;
+}
+/*hover box active boxes with a link */
+.hover-box {
+	border: 1px solid #FFF;
+	color:#000;
+}
+.hover-box:hover {
+	color:#000;
+	border: 1px solid #900;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: content;
+	/*cursor:pointer;*/
+}
+a.hover-box {
+	text-decoration:none;
+	color:#000;
+	
+}
+
+/* special links */
+
+.div-link-red {
+	padding:5px;
+	
+}
+.div-link-red:hover {
+	background-color:#900;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+/*draw our mask selector as an inline object.*/
+div.maskSelectorForm {
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+
+
+
+ul.inventory {
+	font-size: small;
+	padding: 0px;
+	margin-left: 1em;
+}
+ul.inventory ul, ul.inventory li {
+	list-style:none;
+}
+ul.inventory li:hover {
+	background-color: #FCF9E6;/*iu light cream*/
+}
+
+/*levels at, or beneath, warning level get a yellow box*/
+ul.inventory li .normal {
+	font-weight: bold;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+ul.inventory .warn {
+	background-color: yellow;
+	opacity:0.9;
+	padding-left: 2px;
+	padding-right: 2px;
+	
+}
+
+/*levels at, or beneath, critical level get a red box*/
+ul.inventory li.crit {
+	background-color: #AB1A1A;
+	opacity:0.9;
+	color:#fff;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/* a special hover for red boxes, to main legibility */
+ul.inventory li.crit:hover {
+	opacity:0.7;
+}
+
+/*override a few jQuery-UI classes so they render more cleanly.*/
+.ui-icon {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.ui-state-default {
+	cursor:default;
+}
+
+.report-lab {
+	display: inline-block;
+	min-width: 20em;
+	vertical-align: top;
+	vertical-align:top;
+}

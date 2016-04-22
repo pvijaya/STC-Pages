@@ -1,0 +1,121 @@
+/*---Header Navigation---*/
+
+.nav a:link
+{
+	font-family:'Arial','Trebuchet MS', Sans-serif;
+	color:#FFF;
+	text-decoration:none;
+	letter-spacing:.1em;
+}
+
+.nav a:active
+{
+	color:#FFF;
+}
+
+.nav a:visited
+{
+	color:#FFF;
+}
+
+.nav a:hover
+{
+	color:#FFF;
+}
+
+.nav a:focus{
+	background-color:#F8F3D2;
+}
+
+
+ul.nav, ul.nav * 
+{ 
+	margin:0px;
+	padding:0px;
+}
+
+ul.nav 
+{
+	position:relative;
+	width:100%;
+	height:2.4em;
+	z-index:1000;
+	font-weight:normal;
+}
+
+ul.nav li 
+{
+	cursor:pointer;
+	position:relative;
+	display:inline-block;
+	list-style-type:none;
+	padding:0px;
+}
+
+ul.nav li span {
+	font-family:'Arial','Trebuchet MS', Sans-serif;
+	color:#FFF;
+	text-decoration:none;
+	letter-spacing:.1em;
+	display: block;
+    font-weight: 700;
+    line-height: 2.4em;
+    padding: 0 1em;
+}
+
+ul.nav li ul 
+{
+	cursor:default;
+	width:285px;
+	position:absolute;
+	background-position:0 0 !important;
+	left:-9999px;
+	top:0px;
+	z-index:10;
+	top:2.4em;
+}
+ul.nav li ul li ul 
+{
+	display:none;
+}
+ul.nav li a {
+	color:#fff;
+	background:#555
+	background-size:contain;
+	font-weight:700;
+	text-decoration:none;
+	display:block;
+	padding:0 1em;
+	line-height:2.4em;
+}
+
+ul.nav li:hover a, ul.nav li a:hover, ul.nav li a:focus 
+{
+	color:#FFF; 
+	background:#555;
+	height:2.4em;
+}
+ul.nav li:hover ul 
+{
+	left:0px;
+	z-index:10;
+	width:285px;
+	top:2.4em;
+}
+ul.nav li:hover ul li
+{
+	display:inline;
+	width:285px;
+}
+ul.nav li:hover ul li a 
+{
+	border:1px solid #999;
+	color:#FFF; 
+	font-weight:400;
+}
+
+ul.nav li:hover ul li a:hover 
+{
+	color:#000; 
+	background:#999;
+}
